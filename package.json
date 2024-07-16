@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@ant-design/icons-vue": "^7.0.1",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "ant-design-vue": "^4.2.3",
     "vue": "^3.4.29"
   },
