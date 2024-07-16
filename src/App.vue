@@ -40,7 +40,7 @@
 
 
         </div>
-        <div class="gradient-line"></div>
+        
         <div class="recurring_element ">
            <div class="About_us">
             <div>
@@ -48,20 +48,45 @@
             </div>
              
              <div>
-                <a-row>
-               <a-col :span="6">
-                Сегодня «Домашняя гостиница» — одна из крупнейших в Пермском крае гостиничных сетей, динамично расширяющая географический охват и повышающая качество сервиса.
+            <a-row  class="justify_center">
+               <a-col :span="6" style="columns: auto;">
+                Сегодня «Домашняя гостиница» — одна из крупнейших в Пермском крае гостиничных сетей, 
+                динамично расширяющая географический охват и повышающая качество сервиса.
             </a-col>
-              <a-col :span="6">
-
+              <a-col :span="6" class="justify_center">
+                <a-flex gap="middle">
+                <UserOutlined style="font-size: 45px; color: #2B7AF1;" />
+                <div>
+                    <h1 class="span_blue" >40+</h1>
+                    <h3>Клиентов</h3>
+                </div>
+            </a-flex>
               </a-col>
-              <a-col :span="6">col-6</a-col>
-              <a-col :span="6">col-6</a-col>
+              <a-col :span="6" class="justify_center">
+               
+                <a-flex gap="middle">
+               <AliwangwangOutlined  style="font-size: 45px; color: #2B7AF1;"/>
+                <div>
+                    <h1 class="span_blue" >100+</h1>
+                    <h3>Отзывов</h3>
+                </div>
+            </a-flex>
+            </a-col>
+              <a-col :span="6" class="justify_center">
+               
+                <a-flex gap="middle">
+               <HomeOutlined  style="font-size: 45px; color: #2B7AF1;"/>
+                <div>
+                    <h1 class="span_blue" >10+</h1>
+                    <h3>Квартир</h3>
+                </div>
+            </a-flex>
+            </a-col>
              </a-row>
              </div>
 
            </div>
-
+           <div class="gradient-line"></div>
         </div>
       </main>
     </div>
@@ -69,11 +94,11 @@
   
 
 <script>
- import { MailTwoTone , PhoneTwoTone } from '@ant-design/icons-vue';
+ import { MailTwoTone , PhoneTwoTone ,UserOutlined, AliwangwangOutlined ,HomeOutlined  } from '@ant-design/icons-vue';
  import { defineComponent } from 'vue';
  export default defineComponent({
     components: {
-        MailTwoTone,PhoneTwoTone
+        MailTwoTone,PhoneTwoTone , UserOutlined , AliwangwangOutlined, HomeOutlined
     },
   });
 </script>
@@ -109,4 +134,9 @@
 .span_blue{
     color: #2B7AF1;
 }
+.justify_center{
+    display: flex; 
+    justify-content: center;
+}
+
 </style>
